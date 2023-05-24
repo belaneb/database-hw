@@ -4,14 +4,14 @@ const mysql = require('mysql2');
 
 // create the connection to database
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: '127.0.0.1',
     user: 'root',
     database: 'sys'
 });
 
 // Create the connection pool. The pool-specific settings are the defaults
 const pool = mysql.createPool({
-    host: 'localhost',
+    host: '127.0.0.1',
     user: 'root',
     database: 'sys',
     waitForConnections: true,
